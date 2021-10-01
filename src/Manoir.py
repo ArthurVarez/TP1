@@ -62,10 +62,7 @@ class Manoir(threading.Thread):
                 self.canvas.create_image(70*i,70*j,anchor= NW,image=self.bg_icon)
                 self.canvas.create_line(0,70*j,self.taille*70,70*j)
                 self.canvas.create_line(70*i,0,70*i,self.taille*70)
-                # if(self.caseSale(i,j)):
-                #     self.canvas.create_image(70*i,70*j,anchor=NW,image=self.dirt_icon)
-                # if(self.caseBijou(i,j)):
-                #     self.canvas.create_image(70*i,70*j,anchor=NW,image=self.diamond_icon)
+
     def updateGrille(self):
         for i in range(self.taille):
             for j in range(self.taille):
